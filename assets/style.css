@@ -257,7 +257,7 @@ a,button,input,summary,[role="option"],label{touch-action:manipulation;-webkit-t
 .jr__row.is-done .jr__ic .ico:first-child{opacity:0;transform:scale(.4)}
 .jr__row.is-done .jr__ok{opacity:1;transform:none}
 .modes{display:flex;gap:4px}
-.modes li{display:flex;align-items:center;gap:6px;height:34px;padding:0 10px;border-radius:10px;font-size:var(--fs-xs);font-weight:600;color:var(--ink-2)}
+.modes li{display:flex;align-items:center;gap:6px;height:34px;padding:0 10px;border-radius:10px;font-size:var(--fs-xs);font-weight:600;color:var(--ink-2);white-space:nowrap}
 .modes li .ico{color:var(--accent-ink)}
 .quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 .quick__a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:72px;border-radius:18px;background:var(--surface);
@@ -307,6 +307,8 @@ a,button,input,summary,[role="option"],label{touch-action:manipulation;-webkit-t
   .hero__bg{display:none}
 }
 @media (max-width:360px){.modes li span{font-size:.75rem}.modes li{padding:0 6px;gap:4px}}
+@media (max-width:374px){html[lang="en"] .float--modes{display:none}}
+@media (max-width:339px){.float--modes{display:none}}
 
 /* ---------------------------------------------------------------- sections */
 .sec{position:relative;padding-block:var(--sec)}
